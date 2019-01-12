@@ -1,0 +1,23 @@
+@import './variables';
+
+.sidebar-nav {
+    font-family: $opensans;
+    padding: $size-md;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .sidebar-link {
+        display: inline-block;
+        padding: 0 $size-md;
+        font-size: $size-sm;
+        text-decoration: none;
+        color: $grey-light;
+
+        &:hover {
+            text-decoration: underline;
+            color: $grey-dark;
+        }
+    }
+}

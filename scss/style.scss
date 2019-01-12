@@ -1,0 +1,25 @@
+@import './variables';
+@import './helpers';
+@import './nav';
+
+.head-main {
+    font-family: $opensans;
+    font-size: $size-xl;
+    color: $primary-color;
+}
+
+.stripe {
+    font-family: $opensans;
+    background: $strip;
+    color:$grey-lighter;
+    font-size: $size-sm;
+    padding: $size-xs;
+}
+.footer{
+    @extend .stripe;
+    background: $black;
+    height: $size-sm;
+}
+
+
+
