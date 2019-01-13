@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-$primary-color: purple;
-
+$primary-color: red;
 $black: #000;
 $grey-dark: #333;
 $grey-light: #666;
 $grey-lighter: #999;
 $white: #fff;
 $strip: #036;
+$green: #00ff00; 
+$green-light: lighten($green, 10%);
+$green-lightest: lighten($green, 20%);
+
 
 $size-xl: 4rem;
 $size-lg: 3rem;
@@ -16,8 +19,16 @@ $size-sm: 1rem;
 $size-xs: 0.8rem;
 
 
+
 $opensans: 'Open Sans', sans-serif;
 
+%common-box {
+    border: 1px solid $grey-dark;
+    padding: $size-sm;
+    color: $green;
+    background: $white;
+  }
 
-
-
+$mobile: "only screen and (max-width : 767px)";
+$tablet: "only screen and (min-width : 768px) and (max-width : 1023px)";
+$desktop: "only screen and (min-width : 1024px)";

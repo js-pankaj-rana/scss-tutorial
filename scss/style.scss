@@ -1,12 +1,23 @@
 @import './variables';
 @import './helpers';
 @import './nav';
+@import './mixin';
+
+
+html {
+    font-size: 16px;
+}
+
+
 
 .head-main {
     font-family: $opensans;
     font-size: $size-xl;
-    color: $primary-color;
+    color: $green-lightest;
 }
+
+
+
 
 .stripe {
     font-family: $opensans;
@@ -14,7 +25,12 @@
     color:$grey-lighter;
     font-size: $size-sm;
     padding: $size-xs;
+
+    @media #{ $desktop } {
+        background: red;
+      }
 }
+
 .footer{
     @extend .stripe;
     background: $black;
@@ -22,4 +38,11 @@
 }
 
 
+.box-common {
+    @extend %common-box;
+    width: 50vw;
+    margin: 0 auto;
+    background: $strip;
+    @include transform(scale(0.5));
+}
 

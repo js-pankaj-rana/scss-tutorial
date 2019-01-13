@@ -2,15 +2,24 @@
 
 .sidebar-nav {
     font-family: $opensans;
-    padding: $size-md;
+
+    @media #{ $desktop } {
+        padding: $size-md;
+    }
 
     ul {
-        display: flex;
-        justify-content: flex-end;
+        
+        @media #{ $desktop } {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
     }
     .sidebar-link {
         display: inline-block;
-        padding: 0 $size-md;
+        @media #{ $desktop } {
+            padding: 0 $size-md;
+        }
         font-size: $size-sm;
         text-decoration: none;
         color: $grey-light;
@@ -20,4 +29,5 @@
             color: $grey-dark;
         }
     }
+
 }
